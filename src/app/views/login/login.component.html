@@ -16,11 +16,11 @@
 
                     <div class="form-floating">
                         <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" [(ngModel)]="loginModel.email">
-                        <label for="floatingInput">Email</label>
+                        <label for="email">Email</label>
                     </div>
                     <div class="form-floating">
                         <input type="password" class="form-control" name="password" id="password" placeholder="senha" [(ngModel)]="loginModel.password">
-                        <label for="floatingPassword">Senha</label>
+                        <label for="password">Senha</label>
                     </div>
 
                     <div class="checkbox mb-3">
@@ -32,8 +32,8 @@
                     <input class="btn btn-success" type="submit" id="botao-enviar" value="Logar">
 
                 </form>
-                <p id="mensagem" *ngIf="mensagem !='' ">{{mensagem}}</p>
-
+                <p id="mensagem" *ngIf="mensagem !='' ">{{mensagem}}</p><br>
+                <p> <a class="btn btn-warning" role="button" [routerLink]="['/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a></p>
             </main>
 
 

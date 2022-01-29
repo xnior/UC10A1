@@ -17,18 +17,7 @@ export class LoginComponent implements OnInit {
 
   mensagem=""
 
-  onRegistro(){
-    console.log(this.loginModel)
-    this.mensagem=""
-    this.loginService.register(this.loginModel).subscribe((response)=>{
-    console.log(response)
-    
-    },(respostaErro)=>{
-      this.mensagem=respostaErro.error
-      console.log(this.mensagem)
-    }
-    )
-  }
+  
 
   onLogin(){
     console.log(this.loginModel)

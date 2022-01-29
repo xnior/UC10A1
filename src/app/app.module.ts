@@ -8,13 +8,17 @@ import { TopComponent } from './views/top/top.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { LoginComponent } from './views/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { UsuariosComponent } from './views/usuarios/usuarios.component';
+import { CadastrarComponent } from './views/cadastrar/cadastrar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    UsuariosComponent,
+    CadastrarComponent
   ],
   imports: [
     BrowserModule,

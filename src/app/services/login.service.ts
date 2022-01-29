@@ -11,6 +11,7 @@ export class LoginService {
   constructor(private httpClient:HttpClient) { }
   urllogin = 'http://localhost:3000/login'
   urlsub = 'http://localhost:3000/signup'
+  urlusers='http://localhost:3000/users'
   
 login(user:Users):Observable<any>{
 
@@ -26,6 +27,9 @@ register(user:Users):Observable<any>{
     observe:'response'
   })
 }
-  
+getListar():Observable<Users[]>{
+  return this.httpClient.get<Users[]>(this.urlusers);
+
+}
 
 }

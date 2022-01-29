@@ -1,0 +1,30 @@
+<section class="container">
+    <div class="jumbotron">
+
+        <body class="text-center form-signin">
+
+
+            <main class="form-signin">
+                <form (ngSubmit)="onRegistrar()" #form="ngForm">
+                    <h1 class="h3 mb-3 fw-normal">Cadastrar</h1>
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="digite seu nome" [(ngModel)]="usuarioModel.nome">
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" [(ngModel)]="usuarioModel.email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="senha" [(ngModel)]="usuarioModel.password">
+                        <label for="password">Senha</label>
+                    </div>
+                    <input type="submit" value="Cadastrar" class="btn btn-primary">
+
+                </form>
+                <h4>{{mensagem}}</h4>
+            </main>
+        </body>
+    </div>
+</section>
