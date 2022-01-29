@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopComponent } from './views/top/top.component';
+import { FooterComponent } from './views/footer/footer.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopComponent
+    TopComponent,
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
